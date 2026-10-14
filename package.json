@@ -1,0 +1,47 @@
+{
+  "name": "claude-md-doctor",
+  "version": "0.1.0",
+  "description": "Lint and score your CLAUDE.md out of 100, with concrete fixes.",
+  "type": "module",
+  "bin": {
+    "claude-md-doctor": "dist/cli.js"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "prepublishOnly": "npm run build && npm test",
+    "prepare": "tsc"
+  },
+  "keywords": [
+    "claude",
+    "claude-code",
+    "claude-md",
+    "lint",
+    "cli",
+    "anthropic",
+    "ai-coding",
+    "developer-tools"
+  ],
+  "author": "Omri Gotlieb",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Omrigotlieb/claude-md-doctor.git"
+  },
+  "homepage": "https://github.com/Omrigotlieb/claude-md-doctor#readme",
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.43",
+    "typescript": "^5.9.3",
+    "vitest": "^2.1.9"
+  }
+}
