@@ -16,8 +16,7 @@
   "scripts": {
     "build": "tsc",
     "test": "vitest run",
-    "prepublishOnly": "npm run build && npm test",
-    "prepare": "tsc"
+    "prepublishOnly": "npm run build && npm test"
   },
   "keywords": [
     "claude",
